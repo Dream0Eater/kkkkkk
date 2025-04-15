@@ -1,0 +1,5 @@
+add_test([=[LoggerTest.SingletonIdentity]=]  /home/akash/Desktop/SWE_Lab_Final/build/testsuite [==[--gtest_filter=LoggerTest.SingletonIdentity]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LoggerTest.SingletonIdentity]=]  PROPERTIES WORKING_DIRECTORY /home/akash/Desktop/SWE_Lab_Final/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[LoggerTest.LoggingOutput]=]  /home/akash/Desktop/SWE_Lab_Final/build/testsuite [==[--gtest_filter=LoggerTest.LoggingOutput]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LoggerTest.LoggingOutput]=]  PROPERTIES WORKING_DIRECTORY /home/akash/Desktop/SWE_Lab_Final/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  testsuite_TESTS LoggerTest.SingletonIdentity LoggerTest.LoggingOutput)
